@@ -1,0 +1,268 @@
+/*Botões do app*/
+
+body {
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+p {
+    font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+.btn-warning {
+    background-color: #B33A3A;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.btn-confirm {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #1339d1;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+/*Sistema de grid do app*/
+
+.grid-container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+    width: 16.66%;
+    padding: 12px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.32%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.32%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 74.98%;
+}
+
+.col-10 {
+    width: 83.30%;
+}
+
+.col-11 {
+    width: 91.63%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.outline, .outline * {
+    outline: 1px solid #F6A1A1;
+}
+
+[class*='col-'] > p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+/*Estilo das listas de mesas, produtos e clientes*/
+
+h1 {
+    font: 400 30px/1.5 Helvetica, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+    border-bottom: 1px solid #ccc;
+}
+
+    li:last-child {
+        border: none;
+    }
+
+    li a {
+        text-decoration: none;
+        color: #000;
+        display: block;
+        width: 100%;
+        -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+        -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+        -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+        transition: font-size 0.3s ease, background-color 0.3s ease;
+    }
+
+        li a:hover {
+            background: #f6f6f6;
+        }
+
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+.header {
+    height: 60px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer {
+    height: 50px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    position: fixed;
+    border-top: 1px solid #ccc;
+}
+
+.content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 90px;
+    margin-bottom: 70px;
+    height: 400px;
+    padding-top: 10px;
+    overflow: scroll;
+}
+
+#alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    display:none;
+    opacity: 1;
+    transition: opacity 0.6s; /* 600ms to fade out */
+}
+
+#alertPagamento {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    display: none;
+    opacity: 1;
+    transition: opacity 0.6s; /* 600ms to fade out */
+}
+
+/* The close button */
+#closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    /* When moving the mouse over the close button */
+    #closebtn:hover {
+        color: black;
+    }
